@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenGL_ES_20">
+
+        <activity android:name=".example_01.Example_01" android:theme="@style/Theme.Fullscreen"/>
+
         <activity android:name=".OpenGL_ES_20">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

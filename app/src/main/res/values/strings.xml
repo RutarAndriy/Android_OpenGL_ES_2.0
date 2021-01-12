@@ -2,4 +2,5 @@
     <string name="app_name">OpenGL ES 2.0</string>
     <string name="button_start">Запустити</string>
     <string name="button_about">Інфо</string>
+    <string name="button_back">Назад</string>
 </resources>

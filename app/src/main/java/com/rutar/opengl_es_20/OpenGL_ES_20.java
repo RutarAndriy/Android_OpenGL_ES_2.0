@@ -10,11 +10,17 @@ import androidx.annotation.*;
 import androidx.appcompat.app.*;
 import androidx.recyclerview.widget.*;
 
+import com.rutar.opengl_es_20.example_01.Example_01;
+
 public class OpenGL_ES_20 extends AppCompatActivity {
 
 // ................................................................................................
 
-private final Object[][] examples = new Object[][] {};
+private final Object[][] examples = new Object[][] {
+    { "Найпростіший приклад ініціалізації OpenGL ES 2.0", Example_01.class,
+      "Приклад найпростішої ініціалізації OpenGL ES 2.0 на Android " +
+      "( із прикладів Google, абсолютно кривий і непридатний у реальному житті =) )" }
+};
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -105,15 +111,25 @@ about.setOnClickListener(click_listener);
 @SuppressLint("NonConstantResourceId")
 private final View.OnClickListener click_listener = view -> {
 
+int position = (int) view.getTag();
+
 switch (view.getId()) {
 
 case R.id.example_start:
 
-    startActivity(new Intent(this, (Class<?>) examples[(int) view.getTag()][1]));
+    startActivity(new Intent(this, (Class<?>) examples[position][1]));
     break;
 
 case R.id.example_about:
 
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+    builder.setTitle((String) examples[position][0]);
+    builder.setMessage((String) examples[position][2]);
+    builder.setPositiveButton(R.string.button_back, null);
+
+    AlertDialog dialog = builder.create();
+    dialog.show();
     break;
 
 }

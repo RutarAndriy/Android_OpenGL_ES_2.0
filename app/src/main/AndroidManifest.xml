@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OpenGL_ES_20">
+        android:theme="@style/Theme.Default">
 
         <activity android:name=".example_01.Example_01" android:theme="@style/Theme.Fullscreen"/>
+        <activity android:name=".example_02.Example_02" android:theme="@style/Theme.Default" />
 
         <activity android:name=".OpenGL_ES_20">
             <intent-filter>

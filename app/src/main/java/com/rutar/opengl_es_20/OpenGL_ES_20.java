@@ -11,6 +11,7 @@ import androidx.appcompat.app.*;
 import androidx.recyclerview.widget.*;
 
 import com.rutar.opengl_es_20.example_01.Example_01;
+import com.rutar.opengl_es_20.example_02.Example_02;
 
 public class OpenGL_ES_20 extends AppCompatActivity {
 
@@ -19,7 +20,17 @@ public class OpenGL_ES_20 extends AppCompatActivity {
 private final Object[][] examples = new Object[][] {
     { "Найпростіший приклад ініціалізації OpenGL ES 2.0", Example_01.class,
       "Приклад найпростішої ініціалізації OpenGL ES 2.0 на Android " +
-      "( із прикладів Google, абсолютно кривий і непридатний у реальному житті =) )" }
+      "( із прикладів Google, абсолютно кривий і непридатний у реальному житті =) )" },
+    { "Список доступних конфігурацій для OpenGL ES 2.0", Example_02.class,
+      "EGL_RED_SIZE - Кількість біт на червоний канал" + "\n" +
+      "EGL_GREEN_SIZE - Кількість біт на зелений канал" + "\n" +
+      "EGL_BLUE_SIZE - Кількість біт на синій канал" + "\n" +
+      "EGL_ALPHA_SIZE - Кількість біт на альфа канал" + "\n" +
+      "EGL_DEPTH_SIZE - Глибина Z-буфера" + "\n" +
+      "EGL_SAMPLE_BUFFERS - Підтримка антіалайзінгу (згладжування)" + "\n" +
+      "EGL_SAMPLES - Кількість семплів на піксель" + "\n" +
+      "EGL_COVERAGE_BUFFERS_NV - Кількість буферів покриття" + "\n" +
+      "EGL_COVERAGE_SAMPLES_NV - Кількість покривних семплів на піксель" }
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

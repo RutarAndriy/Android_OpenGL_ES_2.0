@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.*;
 
 import com.rutar.opengl_es_20.example_01.Example_01;
 import com.rutar.opengl_es_20.example_02.Example_02;
+import com.rutar.opengl_es_20.example_03.Example_03;
 
 public class OpenGL_ES_20 extends AppCompatActivity {
 
@@ -30,7 +31,10 @@ private final Object[][] examples = new Object[][] {
       "EGL_SAMPLE_BUFFERS - Підтримка антіалайзінгу (згладжування)" + "\n" +
       "EGL_SAMPLES - Кількість семплів на піксель" + "\n" +
       "EGL_COVERAGE_BUFFERS_NV - Кількість буферів покриття" + "\n" +
-      "EGL_COVERAGE_SAMPLES_NV - Кількість покривних семплів на піксель" }
+      "EGL_COVERAGE_SAMPLES_NV - Кількість покривних семплів на піксель" },
+    { "Реалізація стабілізованого FPS для GLSurfaceView", Example_03.class,
+      "Приклад запуску GLSurfaceView із адаптивним підбором конфігурації та " +
+      "реалізацією стабілізованого FPS" },
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
